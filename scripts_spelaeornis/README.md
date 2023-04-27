@@ -1,0 +1,15 @@
+- signal_space.m was used to conduct PCA and view the signal space of _Spelaeornis_. This function uses pcacorr.m, brewermap.m, scoreplotter3d.m and CaptureFigVid.m functions.
+- signal_spce.m also contains the code used to conduct the randomization test to examine whether speices overlapped more or less than expected by random chance.
+- pcacorr.m takes in the noteparameter data, comducts a PCA on the correlation matrix of this data and returns PC scores, eigenvalues and PC loadings.
+- scoreplotter3d.m plots first three PC components, to view the 3d signal space of _Spelaeornis_.
+- CaptureFigVid.m makes an animation of the 3d signal space and saves to an .avi file.
+- brewermap.m provides functionality to color code different species in the signal space.
+- kruskal-wallis_song_complexity_modified.R was used to make the box plot of song complexity metric of _Spelaeornis_ and to conduct a Kruskal-Wallis test.
+- FOMC_trans_prob_final_ver.R was used to compute the transition probabilities between different note groups and note types of _Spelaeornis_. The corresponding figures can be found in figure 3 and Fig S7.
+- FOMC_transition_probabilities_KL_divergence.R was used to conduct the Kullback Leibler Homogeneity test.
+- spelaeornis.m was used to compute song complexity metrics for each species and to construct the UPGMA distance tree. In this code, we calculated song complexity values for each song for each species seperately and manually compiled them. For constructing the UPGMA distance tree, we computed pairwise median levenshtein distances for each species pair of _Spelaeornis_ and compiled them to then construct a UPGMA distance tree (see code).
+- The Jupyter notebook spelaeornis_co_occurrence.ipynb was used to calculate co-occurrence of different notegroups and notetypes of _Spelaeornis_, and to construct the heatmaps shown in Figure 3, Fig S6 and Fig S7. This algorithm was adapted from Bhat _et al_ 2021.
+- doubleblind.m was used to calculate percentages of agreement for the double blind analysis.
+- The jupyter notebook heatmap_KL Divergence.ipynb construct a heatmap from the pairwise KL divergence values (KL divergence.csv, see data_spelaeornis).
+- The note type classifications were carried out using the Classification learner app in MATLAB (Mathworks Inc., Natick, MA, USA).
+- note_acc.m was used to construct the note accumulation curves shown in Fig S3 and Fig S4.
