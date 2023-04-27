@@ -44,11 +44,6 @@ zlim([-4 4])
 OptionZ.FrameRate=7;OptionZ.Duration=14;OptionZ.Periodic=true;
 CaptureFigVid([-20,10;-110,10;-190,80;-290,10;-380,10],'signal_space 3d1_test',OptionZ);
 
-%% MANOVA Test
-score_3d=score(:,1:3);
-[d,p,stats]= manova1(score, sp_id)
-
-[d_par,p_par, stat_par]= manova1(song_data, s_data(:,end))
 
 
 %% Randomization Test
